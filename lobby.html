@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>              
+        <title> Anagrams</title>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+        <script src="./lobby.js"></script>
+
+        <style>
+            input[type=text], select {
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+
+            input[type=submit] {
+                background-color: #6D6968;
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                border-radius: 4px;
+                cursor:pointer;
+            }
+
+            input[type=submit]:hover {
+                background-color: #45a049
+            }
+
+            div {
+                border-radius: 5px;
+                background-color: #f2f2f2;
+                padding: 20px;
+            }
+        </style>
+    </head>
+    <body ng-app="app" ng-controller="appctrl">
+            <h2>Welcome {{username}} </h2>
+
+        <form ng-submit="proposeGame()">
+            <h3>Lobby</h3>
+            <div class="checkbox" ng-repeat="player in lobby_players">
+                <input type="checkbox" name="players" id="{{player.username}}"
+                    ng-model="player.checked">
+                    <span id='{{player.username}}'>{{player.username}}</span>
+            </div>
+            <input type="submit" value="Propose Game"></input>
+        </form>
+            
+        <div id="challenge" ng-show="challenge_show">
+            <h3>{{initiator}} challenged {{challenged}} to a game.</h3>
+            <button value="Accept"></button>
+            <button value="Decline"></button>
+        </div>
+    </body>
+</html>

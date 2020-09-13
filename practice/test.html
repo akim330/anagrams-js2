@@ -1,0 +1,73 @@
+<html>
+<head>
+    <script src='test_img.js'></script>
+</head>
+ <body onload="draw();">
+   <canvas id="canvas" width="150" height="150"></canvas>
+   <div style="display:none;">
+     <img id="source" src="server/rhino.png" width="300" height="227">
+     <img id="frame" src="https://mdn.mozillademos.org/files/242/Canvas_picture_frame.png" width="132" height="150">
+   </div>
+ </body>
+</html>
+
+
+
+
+<form id='form1' style="position:relative">
+    <div id='div_current' style="position:absolute; top:20px; left:10px; z-index:1">
+        <canvas id='canvas_current' width='140px' height = '10px'>
+            Your browser does not support HTML5 Canvas
+        </canvas>
+    </div>
+    <div id='div_flip' style="position:absolute; top:60px; left:20px; z-index:2">
+        <canvas id='canvas_flip' width='100' height = '10'>
+            Your browser does not support HTML5 Canvas
+        </canvas>
+    </div>
+    <div id='div_tiles' style="position:absolute; top:38px; left:150px; z-index:3">
+        <canvas id='canvas_tiles' width='700' height = '60'>
+            Your browser does not support HTML5 Canvas
+        </canvas>
+    </div>
+    <div id='div_your' style="position:absolute; top:100px; left:10px; z-index:4">
+        <canvas id='canvas_your' width='100px' height = '50px'>
+            Your browser does not support HTML5 Canvas
+        </canvas>
+    </div>
+    <div id='div_self_words' style="position:absolute; top:150px; left:30px; z-index:5">
+        <canvas id='canvas_self_words' width='470' height = '510'>
+            Your browser does not support HTML5 Canvas
+        </canvas>
+    </div>
+    <div id='div_opp' style="position:absolute; top:100px; left:510px; z-index:6">
+        <canvas id='canvas_opp' width='100px' height = '50px'>
+            Your browser does not support HTML5 Canvas
+        </canvas>
+    </div>
+    <div id='div_opp_words' style="position:absolute; top:150px; left:530px; z-index:7">
+        <canvas id='canvas_opp_words' width='470' height = '510'>
+            Your browser does not support HTML5 Canvas
+        </canvas>
+    </div>
+    <div id='div_guess' style="position:absolute; top:660px; left:10px; z-index:8">
+        <canvas id='canvas_guess' width='500' height = '40'>
+            Your browser does not support HTML5 Canvas
+        </canvas>
+    </div>
+    <div id='div_status' style="position:absolute; top:700; left:10; z-index:9">
+        <canvas id='canvas_guess' width='900' height = '40'>
+            Your browser does not support HTML5 Canvas
+        </canvas>
+    </div> 
+</form>
+
+<canvas id='canvas_current' width='140px' height ='25px'></canvas>
+<canvas id='canvas_flip' width='100px' height = '30px'></canvas>
+<canvas id='canvas_tiles' width='700px' height = '60px'></canvas>
+<canvas id='canvas_your' width='200px' height = '50px'></canvas>
+<canvas id='canvas_self_words' width='470px' height = '510px'></canvas>
+<canvas id='canvas_opp' width='400px' height = '50px'></canvas>
+<canvas id='canvas_opp_words' width='470px' height = '510px'></canvas>
+<canvas id='canvas_guess' width='500px' height = '100px'></canvas>
+<canvas id='canvas_status' width='900px' height = '100px'></canvas>

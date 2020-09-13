@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>              
+        <title> Anagrams</title>
+        <script src="/socket.io/socket.io.js"></script>
+
+        <script src='./client.js'></script>
+        <script src='./game_client.js'></script>
+        <script src='./helper_client.js'></script>
+        <script src='./take.js'></script>
+        <script src='./api.js'></script>
+        <script src='./graphics.js'></script>
+
+        <style>
+            #stack {
+                position:relative;
+                }
+            #stack > canvas {
+                position:absolute;
+                left:0;
+                top:0;
+                }
+        </style>
+    </head>
+    <body>
+        <div id="stack">
+            <canvas id='canvas_current' width='140px' height ='25px'></canvas>
+            <canvas id='canvas_flip' width='100px' height = '30px'></canvas>
+            <canvas id='canvas_tiles' width='700px' height = '75px'></canvas>
+            <canvas id='canvas_your' width='200px' height = '50px'></canvas>
+            <canvas id='canvas_self_words' width='470px' height = '510px'></canvas>
+            <canvas id='canvas_opp' width='400px' height = '50px'></canvas>
+            <canvas id='canvas_opp_words' width='470px' height = '510px'></canvas>
+            <canvas id='canvas_guess' width='900px' height = '50px'></canvas>
+            <canvas id='canvas_status' width='900px' height = '100px'></canvas>
+        </div>  
+        <div style="display:none;">
+            <img id="A" src="images/A.png">
+            <img id="B" src="images/B.png">
+            <img id="C" src="images/C.png">
+            <img id="D" src="images/D.png">
+            <img id="E" src="images/E.png">
+            <img id="F" src="images/F.png">
+            <img id="G" src="images/G.png">
+            <img id="H" src="images/H.png">
+            <img id="I" src="images/I.png">
+            <img id="J" src="images/J.png">
+            <img id="K" src="images/K.png">
+            <img id="L" src="images/L.png">
+            <img id="M" src="images/M.png">
+            <img id="N" src="images/N.png">
+            <img id="O" src="images/O.png">
+            <img id="P" src="images/P.png">
+            <img id="Q" src="images/Q.png">
+            <img id="R" src="images/R.png">
+            <img id="S" src="images/S.png">
+            <img id="T" src="images/T.png">
+            <img id="U" src="images/U.png">
+            <img id="V" src="images/V.png">
+            <img id="W" src="images/W.png">
+            <img id="X" src="images/X.png">
+            <img id="Y" src="images/Y.png">
+            <img id="Z" src="images/Z.png">
+          </div>
+    </body>
+</html>

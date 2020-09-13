@@ -1,0 +1,28 @@
+{
+  "name": "anagrams-js",
+  "version": "1.0.0",
+  "description": "Anagrams game app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akim330/anagrams_js.git"
+  },
+  "author": "Andrew Kim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akim330/anagrams_js/issues"
+  },
+  "homepage": "https://github.com/akim330/anagrams_js#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-validator": "^6.6.1",
+    "fetch": "^1.1.0",
+    "pug": "^3.0.0",
+    "pug-cli": "^1.0.0-alpha6",
+    "socket.io": "^2.3.0"
+  }
+}
